@@ -1,0 +1,36 @@
+public class BankAccount {
+    private String name;
+    private String number;
+    private String type;
+    private double balance;
+    private double minBalance;
+
+    public BankAccount(String name, String number, String type, double initialBalance, double minBalance) {
+        this.name = name;
+        this.number = number;
+        this.type = type;
+        this.balance = initialBalance;
+        this.minBalance = minBalance;
+    }
+
+    public String getAccountNumber() {
+        return number;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public double getMinBalance() {
+        return minBalance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Account Number: " + number + ", Type: " + type + ", Balance: $" + balance;
+    }
+}
